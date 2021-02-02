@@ -7,14 +7,14 @@ import os
 INITIAL_CALLBACK_DELAY = 45
 
 # Every how often we should be fetching instance descriptors (in seconds)
-FETCH_DESCRIPTOR_FREQUENCY = 10 * 60
+FETCH_DESCRIPTOR_FREQUENCY = 30
 FETCH_DESCRIPTOR_FREQUENCY_TESTNET = 20
 
 # Every how often we should be checking whether we should publish our frontend
 # descriptor (in seconds). Triggering this callback doesn't mean we will
 # actually upload a descriptor. We only upload a descriptor if it has expired,
 # the intro points have changed, etc.
-PUBLISH_DESCRIPTOR_CHECK_FREQUENCY = 5 * 60
+PUBLISH_DESCRIPTOR_CHECK_FREQUENCY = 60
 PUBLISH_DESCRIPTOR_CHECK_FREQUENCY_TESTNET = 10
 
 # How long should we keep a frontend descriptor before we expire it (in
@@ -50,5 +50,5 @@ MAX_DESCRIPTOR_SIZE = 50000
 DEFAULT_LOG_LEVEL = os.environ.get('ONIONBALANCE_LOG_LEVEL', 'warning')
 
 
-MAX_INTRO_POINTS=10
+MAX_INTRO_POINTS=20
 DISTINCT_DESCRIPTORS=True
