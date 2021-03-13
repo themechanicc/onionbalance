@@ -7,14 +7,14 @@ import os
 INITIAL_CALLBACK_DELAY = 45
 
 # Every how often we should be fetching instance descriptors (in seconds)
-FETCH_DESCRIPTOR_FREQUENCY = 120
+FETCH_DESCRIPTOR_FREQUENCY = 5 * 60
 FETCH_DESCRIPTOR_FREQUENCY_TESTNET = 60
 
 # Every how often we should be checking whether we should publish our frontend
 # descriptor (in seconds). Triggering this callback doesn't mean we will
 # actually upload a descriptor. We only upload a descriptor if it has expired,
 # the intro points have changed, etc.
-PUBLISH_DESCRIPTOR_CHECK_FREQUENCY = 30
+PUBLISH_DESCRIPTOR_CHECK_FREQUENCY = 1 * 60
 PUBLISH_DESCRIPTOR_CHECK_FREQUENCY_TESTNET = 10
 
 # How long should we keep a frontend descriptor before we expire it (in
