@@ -39,7 +39,7 @@ INSTANCE_DESCRIPTOR_TOO_OLD_TESTNET = 20
 HSDIR_N_REPLICAS = 2
 # How many uploads per replica
 # [TODO: Get these from the consensus instead of hardcoded]
-HSDIR_SPREAD_STORE = 4
+HSDIR_SPREAD_STORE = 3
 
 # Max descriptor size (in bytes) (see hs_cache_get_max_descriptor_size() in
 # little-t-tor)
